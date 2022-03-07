@@ -1,0 +1,154 @@
+
+
+
+/* Los valores no pueden ir en el body directamente */
+*{
+    margin:10px;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    /* margin: 0;
+    padding: 0; */
+  
+    
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    /* flex-direction: row; */
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+
+
+header{
+    background:rgb(56, 65, 187); 
+    
+    display:flex;
+    flex-flow: column nowrap;
+        
+}
+.div_header{
+    /* border: 2px solid rgb(189, 12, 12); */
+    display: flex;
+    /* align-items: center; */
+    background:rgb(19, 19, 112); 
+    
+    /* flex-flow: column nowrap; */
+
+}
+
+.lateral,.centro{
+    background: rgb(241, 81, 81);
+}
+
+.lateral{
+    flex: 1 1 auto;
+    
+}
+
+.centro{
+    flex: 5 1 auto;
+   
+}
+
+.div_header2{
+    /* border-color: red;
+    border-style: solid;
+    border-width: 2px; */
+    
+    background-color: chocolate;
+    
+}
+.completo{
+    background-color: burlywood;
+    
+}
+
+main{
+    background:rgb(56, 65, 187);
+    display:flex;
+    
+}
+.main1{
+    display:flex;
+    background-color: cornflowerblue;
+    flex: 2 1 auto;
+    flex-wrap: wrap;
+}
+
+.linea1{
+    flex: 1 1 35%;
+    background-color: blue;
+}
+
+.linea2{
+    flex: 1 1 100%;
+    background-color: blueviolet;
+}
+
+.main2{
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    background-color: crimson;
+
+}
+.linea3{
+   flex: 1 1 auto;
+
+    background-color: burlywood;
+}
+
+footer{
+    background-color: rgb(56, 65, 187);
+    display: flex;
+}
+
+.div_footer{
+    
+    /* flex-wrap: nowrap; */
+    flex: 1 1 100%;
+    background-color: rgb(247, 180, 10);
+}
+
+@media screen and (max-width: 678px) {
+    main{
+        background-color: rgb(252, 193, 0);
+        flex-direction: column ;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px){
+    header{
+        /* flex-direction: column; */
+    }
+    .div_header{
+        flex-direction: column;
+    }
+    main{
+        background-color: rgb(252, 0, 252);
+    }
+
+    .main1{
+        flex-direction: column;
+        background-color:rgb(11, 237, 245)
+    }
+    .linea1{
+        background-color: rgb(12, 81, 209);
+    }
+    .linea2{
+        background-color: blueviolet;
+    }
+
+    .main2{
+        background-color: darkviolet;
+    }
+}
