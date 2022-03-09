@@ -23,6 +23,8 @@ body{
     /* flex-direction: row; */
     background-color: whitesmoke;
     padding: 10px;
+    max-width: 1200px;
+    margin: auto;
 
 }
 
