@@ -20,18 +20,18 @@ body{
 .container{
     display: flex;
     flex-flow: column nowrap;
-    /* flex-direction: row; */
     background-color: whitesmoke;
     padding: 10px;
+    max-width: 1200px;
+    margin: auto;
 
 }
 
 
 header{
-    background:rgb(56, 65, 187); 
-    
+    background:rgb(56, 65, 187);   
     display:flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; 
         
 }
 .div_header{
@@ -95,7 +95,7 @@ main{
 
 .main2{
     flex: 1 1 auto;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     background-color: crimson;
 
 }
