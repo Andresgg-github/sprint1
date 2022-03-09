@@ -33,8 +33,7 @@ body{
 
 
 header{
-    background:rgb(56, 65, 187); 
-    
+    background:rgb(56, 65, 187);  
     display:flex;
     flex-flow: column nowrap;
         
