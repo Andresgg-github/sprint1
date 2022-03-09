@@ -1,0 +1,297 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+*{
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+
+  
+img {
+    pointer-events: none;
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(94, 89, 89);
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER**************************************************** */
+
+header,main,footer{
+    background-color: black;
+}
+header{
+    display:flex;
+    flex-flow: column nowrap;
+    background-image: url(../images/cabezera.jpg);
+    background-position: center;
+    background-attachment:contain ;
+    background-size: cover;
+}
+.menu{
+    display:flex;
+    /* background-color: darkgrey; */
+    
+}
+
+.logo,.nav,.social{
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    flex: 5 1 auto;
+    font-family: 'Raleway',sans-serif;
+    padding: 10px;
+   
+   
+    /* border: 5px solid black; */
+}
+.nav i {
+    font-size: 30px;
+}
+.nav i:hover, .social i:hover{
+    font-weight: bolder;
+    color:blue;
+    
+   
+}
+
+
+.logo img {
+    display: flex;
+    width: 200px;
+    height: auto;
+    animation-name: rotar;
+    animation-duration: 4s;
+    
+}
+
+.social,.logo{
+    flex: 1 1 auto;
+   
+}
+.social i{
+    font-size: 40px;
+}
+.texto{
+    display:flex;
+    flex-flow: row nowrap;
+    /* background-color:chocolate ; */
+   
+    /* background: transparent; */
+    margin-bottom: 0%
+}
+.texto 
+
+.linea3{
+    flex: 1 1 auto;
+    background-color: rgb(126, 121, 121);opacity: 0.6;
+    margin-bottom: 0%;
+    
+    
+}
+.frase{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: chocolate;
+    animation: rotar;
+    animation-duration: 4s;
+}
+
+/* MAIN ***************************************************************** */
+
+main{
+    display:flex;
+    
+}
+.articulos{
+    flex: 2 1 auto;
+    display:flex;
+    flex-flow: row wrap;
+    background-color: darkslategrey;
+}
+
+.article{
+    flex: 1 1 40%;
+    background-color: rgb(108, 139, 139);
+    
+}
+
+.navegacion{
+    flex: 1 1 100%;
+    background-color: bisque;
+}
+
+.aside{
+    flex: 1 1 auto;
+    background-color: crimson;
+}
+
+.publicidad{
+    background-color: darkorange;
+}
+
+.article h2 {
+    background-color: lightpink;
+}
+
+.article h4{
+    color: chartreuse;
+    font-size: small;
+}
+.article p{
+    column-count: 2;
+}
+.article a{
+    text-decoration: none;
+    color: blue;
+}
+.article img,.publicidad img{
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER ************************************************************** */
+
+.pie{
+    background-color: orange;
+    text-align: center;
+
+}
+
+/* MEDIAQUERY ***************************** */
+@media screen and (max-width: 400px){
+    
+    
+    header,.menu,.nav,.logo,.articulos{
+        flex-direction: column;
+    }
+    .nav{
+        padding-bottom: 0%;
+        color:salmon;
+    }
+    .nav i{      
+        font-size: 12px;
+    }
+    .logo img{
+        max-width: 70%;
+        max-height: auto;
+    }
+    .social{
+        padding-top: 0%;
+    }
+    .social i{
+        font-size: 20px;
+        display:flex;
+        align-items: flex-start;
+        color: salmon;
+    }
+    .frase{
+        font-size: 12px;
+        
+    }
+    
+    .pie,.navegacion h1,.article h1,.publicidad h1{
+        font-size: 12px;
+        padding:1px;
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width: 802px){
+    header,.menu,.nav,.logo,.articulos{
+        flex-direction: column;
+    }
+    .article p{
+        column-count: 1;
+    }
+}
+@media screen and (max-width: 1530px) {
+    .nav i,.social i,.frase h1{      
+        font-size: 20px;
+       
+    }
+    .social i{
+        
+        display:flex;
+        align-items: flex-start;
+        
+    }
+     
+    
+
+    main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+
+    .nav i,.social i,.frase h1{      
+        font-size: 16px;
+       
+    }
+    .social i{
+        
+        display:flex;
+        align-items: flex-start;
+        
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .menu{
+        flex-direction: column;
+    }
+    .nav i,.social i,.frase h1{      
+        font-size: 20px;
+       
+    }
+    .social i,.nav i{
+        
+        display:flex;
+        align-items: flex-start;
+        color: salmon;
+    }
+    .frase{
+        font-size: 24px;
+    }
+    
+
+}
+@media screen and (min-width: 1510px){
+    .nav i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:270px){
+    *{
+        min-width: 260px;
+    }
+   
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+
+}
